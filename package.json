@@ -1,0 +1,55 @@
+{
+	"name": "unity-asmdef",
+	"displayName": "Unity Assemblies",
+	"description": "Utilities for managing and referencing Unity's assembly definitions",
+	"version": "0.0.1",
+	"author": {
+		"name": "cookie1170",
+		"url": "https://github.com/cookie1170"
+	},
+	"repository": {
+		"type": "github",
+		"url": "https://github.com/cookie1170/unity-asmdef"
+	},
+	"engines": {
+		"vscode": "^1.108.1"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [],
+	"main": "./out/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "unity-asmdef.referenceAssembly",
+				"title": "asmdef: Reference Assembly"
+			},
+			{
+				"command": "unity-asmdef.updateAssemblies",
+				"title": "asmdef: Update Assemblies"
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"pretest": "npm run compile && npm run lint",
+		"lint": "eslint src",
+		"test": "vscode-test"
+	},
+	"devDependencies": {
+		"@types/mocha": "^10.0.10",
+		"@types/node": "22.x",
+		"@types/vscode": "^1.108.1",
+		"@vscode/test-cli": "^0.0.12",
+		"@vscode/test-electron": "^2.5.2",
+		"eslint": "^9.39.2",
+		"typescript": "^5.9.3",
+		"typescript-eslint": "^8.52.0"
+	},
+	"dependencies": {
+		"fast-glob": "^3.3.3"
+	}
+}
