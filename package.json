@@ -2,11 +2,12 @@
 	"name": "unity-asmdef",
 	"displayName": "Unity Assemblies",
 	"description": "Utilities for managing and referencing Unity's assembly definitions",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"author": {
 		"name": "cookie1170",
 		"url": "https://github.com/cookie1170"
 	},
+	"publisher": "cookie1170",
 	"repository": {
 		"type": "github",
 		"url": "https://github.com/cookie1170/unity-asmdef"
